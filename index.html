@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bassett Creek Montessori | Home</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap-select/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
      <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-    <!-- remixicon CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- <link rel="stylesheet" href="assets/css/kidearn.css"> -->
+
 </head>
 <body>
     
@@ -57,7 +67,7 @@
     </nav>
    
 
-    <section class="about-section pt-3 mt-4">
+    <section class="about-section pt-20 pb-20 mt-4">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-3 wow fadeInLeft animated">
@@ -80,7 +90,7 @@
                             <img src="assets/images/shapes/about-1-border.jpg" alt="shape">
                         </div>
 
-                        <div class="about-one__image__leaf kidearn-splax simple-parallax-initialized" data-para-options="{
+                        <div class="about-one__image__leaf bcm-splax" data-para-options="{
                             &quot;orientation&quot;: &quot;left&quot;,
                             &quot;scale&quot;: 1.5,
                             &quot;overflow&quot;: true
@@ -88,23 +98,310 @@
                             <img src="assets/images/shapes/about-1-leaf.png" alt="kidearn">
                         </div>
 
-                        <!-- <div class="about-one__image__ball wow fadeInUp animated" data-wow-delay="100ms"></div> -->
+                        <div class="about-one__image__ball wow fadeInUp animated" data-wow-delay="100ms"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="testimonial-one">
+        <div class="testimonial-one__pen bcm-splax" data-para-options='{
+        "orientation": "left",
+		"scale": 2.5,
+		"overflow": true
+		}'>
+            <img src="assets/images/shapes/pen.png" alt="message">
+        </div>
+        <div class="container">
+            <div class="testimonial-one__area">
+                <div class="testimonial-one__bg"></div>
+                <div class="testimonial-one__bg-shape bcm-splax" style="background-image: url(assets/images/shapes/testimonial-shape-1.png);" data-para-options='{
+                    "orientation": "down",
+                    "scale": 1.5,
+                    "delay": ".3",
+                    "transition": "cubic-bezier(0,0,0,1)",
+                    "overflow": true
+                    }'>
+                </div>
+                <div class="testimonial-one__star-left"><img src="assets/images/shapes/star1.png" alt="message"></div>
+                <div class="testimonial-one__star-right"><img src="assets/images/shapes/star2.png" alt="message"></div>
+                <div class="sec-title text-center">
+                    <span class="sub-heading">A Welcome message from Mrs. Helen</span>
+                    <h2 class="secondary-header">Dear Parents, Guardians and Esteemed Families,</h2>
+                </div><!-- /.sec-title -->
+                <div class="testimonial-one__carousel">
+                    <div class="testimonial-one__item">
+                        <div class="testimonial-one__item__quote">
+                            It is my pleasure to extend a warm welcome to Bassett Creek Montessori. As the Director and
+                            owner, I am thrilled to be a part of your child's educational journey. Our philosphy revolves
+                            around creating an environment that not only nurtures academic growth but also focuses on the
+                            holistic development of each child. I invite you to explore the wonders of Bassett Creek
+                            Montessori, where education is an exciting adventure.
+
+                            Warm regards,
+                        </div>
+                        <div class="testimonial-one__item__author">
+                            <!-- <img src="assets/images/resources/testi-author-1.png" alt="message"> -->
+                            <h5 class="testimonial-one__item__author__name">Mrs. Helen De Alwis</h5>
+                            <p class="testimonial-one__item__author__designation">BCM Director/Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="program-one pt-20">
+        <div class="program-one__bg bcm-splax simple-parallax-initialized" data-para-options="{
+            &quot;orientation&quot;: &quot;up&quot;,
+            &quot;scale&quot;: 2.5,
+            &quot;overflow&quot;: true
+            }" style="will-change: transform; transform: translate3d(0px, 84px, 0px);">
+            <img src="assets/images/shapes/program-bg-shape.png" alt="kidearn">
+        </div>
+        <div class="container">
+            <div class="sec-title text-center">
+                <span class="sub-heading">Our Programs</span>
+                <h2 class="secondary-header">We meet kids at their level<br> regardless of their age</h2>
+            </div>
+            <div class="row pt-20">
+                <div class="col-lg-4 col-md-6">
+                    <div class="program-one__item wow fadeInUp animated" data-wow-duration="1500ms" data-wow-delay="00ms" style="--accent-color: #F25334; visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                        <div class="program-one__item__shape item__bg_0">
+                            <svg class="program-one__item__shape-one" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 43">
+                                <path d="M11.0817 6.98831C-9.7901 23.3302 2.35379 52.1177 18.5511 39.5735C34.7647 27.0458 39.1287 -14.9434 11.0817 6.98831Z"></path>
+                            </svg>
+                            <svg class="program-one__item__shape-two" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 21">
+                                <path d="M5.28824 3.20713C-4.67276 11.0063 1.12287 24.745 8.85298 18.7583C16.5909 12.7795 18.6736 -7.25972 5.28824 3.20713Z"></path>
+                            </svg>
+                        </div>
+                        <div class="program-one__item__bg"></div>
+                        <div class="program-one__item__image">
+                            <img src="assets/images/backgrounds/hero-3.jpeg" alt="Infants">
+                        </div>
+                        <div class="program-one__item__content">
+                            <h3 class="program-one__item__title"><a href="program.html">Infants</a></h3>
+                            <div class="program-one__item__age">(1.2-16 months)</div>
+                            <p class="program-one__item__text">We are licensed for 8 infants ages six weeks to 16 months</p>
+                            <a class="program-one__item__rm" href="program.html"><span class="ri-arrow-right-line"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="program-one__item wow fadeInUp animated" data-wow-duration="1500ms" data-wow-delay="200ms" style="--accent-color: #4099D4; visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
+                        <div class="program-one__item__shape">
+                            <svg class="program-one__item__shape-one" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 43">
+                                <path d="M11.0817 6.98831C-9.7901 23.3302 2.35379 52.1177 18.5511 39.5735C34.7647 27.0458 39.1287 -14.9434 11.0817 6.98831Z"></path>
+                            </svg>
+                            <svg class="program-one__item__shape-two" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 21">
+                                <path d="M5.28824 3.20713C-4.67276 11.0063 1.12287 24.745 8.85298 18.7583C16.5909 12.7795 18.6736 -7.25972 5.28824 3.20713Z"></path>
+                            </svg>
+                        </div>
+                        <div class="program-one__item__bg item__bg_2"></div>
+                        <div class="program-one__item__image">
+                            <img src="assets/images/backgrounds/hero-3.jpeg" alt="Toddlers">
+                        </div>
+                        <div class="program-one__item__content">
+                            <h3 class="program-one__item__title"><a href="program.html">Toddlers</a></h3>
+                            <div class="program-one__item__age">(16-33 months)</div>
+                            <p class="program-one__item__text">We are licensed for 14 toddlers ages 16 months to 33 months</p>
+                            <a class="program-one__item__rm" href="program.html"><span class="ri-arrow-right-line"></span></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="program-one__item program-one__item--order wow fadeInUp animated" data-wow-duration="1500ms" data-wow-delay="300ms" style="--accent-color: #050504; visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <div class="program-one__item__shape">
+                            <svg class="program-one__item__shape-one" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 43">
+                                <path d="M11.0817 6.98831C-9.7901 23.3302 2.35379 52.1177 18.5511 39.5735C34.7647 27.0458 39.1287 -14.9434 11.0817 6.98831Z"></path>
+                            </svg>
+                            <svg class="program-one__item__shape-two" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 21">
+                                <path d="M5.28824 3.20713C-4.67276 11.0063 1.12287 24.745 8.85298 18.7583C16.5909 12.7795 18.6736 -7.25972 5.28824 3.20713Z"></path>
+                            </svg>
+                        </div>
+                        <div class="program-one__item__bg item__bg_3"></div>
+                        <div class="program-one__item__image">
+                            <img src="assets/images/backgrounds/hero-3.jpeg" alt="Preschoolers">
+                        </div>
+                        <div class="program-one__item__content">
+                            <h3 class="program-one__item__title"><a href="program.html">Preschoolers</a></h3>
+                            <div class="program-one__item__age">(33 months-5 years)</div>
+                            <p class="program-one__item__text">We are licensed for 20 preschoolers ages 33 months to 5 years</p>
+                            <a class="program-one__item__rm" href="program.html"><span class="ri-arrow-right-line"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-one">
+        <div class="team-one__bg bcm-splax" data-para-options='{
+            "orientation": "up",
+            "scale": 1.5,
+            "overflow": true
+            }'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1195 1252">
+                <path
+                    d="M211.29 830.798C-198.76 707.556 65.7912 34.8903 361.688 40.6371C657.585 46.3839 708.035 114.612 848.844 103.059C989.653 91.5051 1158.39 -92.3898 1316.24 63.0933C1474.09 218.592 1356.45 408.609 1425.45 592.889C1478.72 735.167 1718.31 1057.1 1492.55 1209.42C1209.75 1400.22 1025.31 885.993 761.277 816.097C497.243 746.202 515.507 922.251 211.29 830.798Z" />
+            </svg>
+        </div>
+        <div class="container">
+            <div class="sec-title text-center">
+                <span class="sub-heading">Our Teacher</span>
+                <h2 class="secondary-header">Meet our expert & smart<br> superheroes!</h2>
+            </div>
+            <div class="team-one__carousel kidearn-owl__carousel kidearn-owl__carousel--basic-nav kidearn-owl__carousel--with-shadow owl-carousel owl-theme pt-20" data-owl-options='{
+                "items": 1,
+                "margin": 0,
+                "loop": false,
+                "smartSpeed": 700,
+                "nav": false,
+                "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+                "dots": true,
+                "autoplay": false,
+                "responsive": {
+                    "0": {
+                        "items": 1
+                    },
+                    "576": {
+                        "items": 2,
+                        "margin": 30
+                    },
+                    "992": {
+                        "items": 4,
+                        "margin": 30
+                    }
+                }
+                }'>
+                <div class="item">
+                    <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='00ms' style='--accent-color: #4099D4;'>
+                        <div class="team-card__svg-top">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 157" fill="currentColor">
+                                <path d="M0.255249 1.69657C0.907365 0.855618 12.3312 0.403216 29.5368 0.426383C46.7158 0.513133 69.6055 1.28915 92.43 3.86789C115.129 6.52265 136.887 11.9096 152.332 18.8871C156.063 20.7291 160.018 22.2178 163.085 24.0834C166.027 26.0249 168.807 27.8183 171.326 29.4759C172.586 30.3047 173.783 31.1053 174.907 31.8548C175.906 32.6803 176.753 33.513 177.573 34.2768C179.212 35.8045 180.617 37.1329 181.716 38.2108C182.815 39.2886 184.157 40.5888 185.634 42.1007C187.067 43.6303 188.151 45.5893 189.621 47.6079C191.002 49.662 192.509 51.9048 194.115 54.2677C195.766 56.6128 196.54 59.4901 197.896 62.2698C199.074 65.1203 200.421 68.0095 201.537 71.0967C202.284 74.3024 203.059 77.5769 203.852 80.8974C205.752 87.4145 205.994 94.5861 206.495 101.496C207.754 129.351 201.165 155.955 198.932 156.465C195.811 157.22 197.496 131.837 192.769 105.828C191.373 99.4039 190.414 92.6477 187.897 86.6661C186.845 83.6072 185.802 80.5712 184.786 77.6041C183.331 74.8368 181.903 72.1384 180.52 69.5546C179.048 67.0063 178.105 64.3551 176.347 62.2643C174.679 60.1381 173.145 58.0913 171.694 56.2509C170.197 54.4283 169.113 52.6017 167.699 51.2504C166.276 49.8762 164.988 48.7137 163.971 47.7099C162.953 46.7061 161.692 45.48 160.232 44.014C159.485 43.3013 158.755 42.5021 157.872 41.71C156.864 40.994 155.794 40.2498 154.696 39.4367C152.464 37.8513 150.061 36.0947 147.461 34.2305C144.815 32.3841 141.282 30.9144 138.018 29.0738C124.431 22.0789 105.04 16.1286 84.1235 12.4784C63.162 8.84582 41.6318 6.79042 25.7309 5.21776C9.8033 3.70869 -0.387809 2.56047 0.255249 1.69657Z"/>
+                            </svg>
+                        </div>
+                        <div class="team-card__svg-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217 98" fill="currentColor">
+                                <path d="M203.517 22.6552C120.489 128.266 3.54803 91.1587 2.29153 90.7596C0.667608 90.2287 -0.200435 88.4866 0.330195 86.8628C0.860825 85.2391 2.60286 84.3715 4.22678 84.9025C5.48328 85.3016 130.102 124.677 210.694 2.04102C211.597 0.592506 213.532 0.229286 214.961 1.15706C216.391 2.08483 216.774 3.99488 215.846 5.42433C211.856 11.5493 207.731 17.2946 203.517 22.6552Z"/>
+                            </svg>
+                        </div>
+                        <div class="team-card__image kidearn-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'>
+                            <img src="assets/images/backgrounds/team-1-1.jpg" alt="Miss Lakmini ">
+                        </div>
+                        <div class="team-card__content">
+                            <h3 class="team-card__title">
+                                <a href="team-details.html">Miss Lakmini </a>
+                            </h3>
+                            <p class="team-card__designation">Lead toddler teacher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='100ms' style='--accent-color: #FFAA23;'>
+                        <div class="team-card__svg-top">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 157" fill="currentColor">
+                                <path d="M0.255249 1.69657C0.907365 0.855618 12.3312 0.403216 29.5368 0.426383C46.7158 0.513133 69.6055 1.28915 92.43 3.86789C115.129 6.52265 136.887 11.9096 152.332 18.8871C156.063 20.7291 160.018 22.2178 163.085 24.0834C166.027 26.0249 168.807 27.8183 171.326 29.4759C172.586 30.3047 173.783 31.1053 174.907 31.8548C175.906 32.6803 176.753 33.513 177.573 34.2768C179.212 35.8045 180.617 37.1329 181.716 38.2108C182.815 39.2886 184.157 40.5888 185.634 42.1007C187.067 43.6303 188.151 45.5893 189.621 47.6079C191.002 49.662 192.509 51.9048 194.115 54.2677C195.766 56.6128 196.54 59.4901 197.896 62.2698C199.074 65.1203 200.421 68.0095 201.537 71.0967C202.284 74.3024 203.059 77.5769 203.852 80.8974C205.752 87.4145 205.994 94.5861 206.495 101.496C207.754 129.351 201.165 155.955 198.932 156.465C195.811 157.22 197.496 131.837 192.769 105.828C191.373 99.4039 190.414 92.6477 187.897 86.6661C186.845 83.6072 185.802 80.5712 184.786 77.6041C183.331 74.8368 181.903 72.1384 180.52 69.5546C179.048 67.0063 178.105 64.3551 176.347 62.2643C174.679 60.1381 173.145 58.0913 171.694 56.2509C170.197 54.4283 169.113 52.6017 167.699 51.2504C166.276 49.8762 164.988 48.7137 163.971 47.7099C162.953 46.7061 161.692 45.48 160.232 44.014C159.485 43.3013 158.755 42.5021 157.872 41.71C156.864 40.994 155.794 40.2498 154.696 39.4367C152.464 37.8513 150.061 36.0947 147.461 34.2305C144.815 32.3841 141.282 30.9144 138.018 29.0738C124.431 22.0789 105.04 16.1286 84.1235 12.4784C63.162 8.84582 41.6318 6.79042 25.7309 5.21776C9.8033 3.70869 -0.387809 2.56047 0.255249 1.69657Z"/>
+                            </svg>
+                        </div>
+                        <div class="team-card__svg-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217 98" fill="currentColor">
+                                <path d="M203.517 22.6552C120.489 128.266 3.54803 91.1587 2.29153 90.7596C0.667608 90.2287 -0.200435 88.4866 0.330195 86.8628C0.860825 85.2391 2.60286 84.3715 4.22678 84.9025C5.48328 85.3016 130.102 124.677 210.694 2.04102C211.597 0.592506 213.532 0.229286 214.961 1.15706C216.391 2.08483 216.774 3.99488 215.846 5.42433C211.856 11.5493 207.731 17.2946 203.517 22.6552Z"/>
+                            </svg>
+                        </div>
+                        <div class="team-card__image kidearn-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'>
+                            <img src="assets/images/backgrounds/team-1-1.jpg" alt="Mrs. Helen">
+                        </div>
+                        <div class="team-card__content">
+                            <h3 class="team-card__title">
+                                <a href="team-details.html">Mrs. Helen</a>
+                            </h3>
+                            <p class="team-card__designation">Lead Montessori teacher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms' style='--accent-color: #050504;'>
+                        <div class="team-card__svg-top">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 157" fill="currentColor">
+                                <path d="M0.255249 1.69657C0.907365 0.855618 12.3312 0.403216 29.5368 0.426383C46.7158 0.513133 69.6055 1.28915 92.43 3.86789C115.129 6.52265 136.887 11.9096 152.332 18.8871C156.063 20.7291 160.018 22.2178 163.085 24.0834C166.027 26.0249 168.807 27.8183 171.326 29.4759C172.586 30.3047 173.783 31.1053 174.907 31.8548C175.906 32.6803 176.753 33.513 177.573 34.2768C179.212 35.8045 180.617 37.1329 181.716 38.2108C182.815 39.2886 184.157 40.5888 185.634 42.1007C187.067 43.6303 188.151 45.5893 189.621 47.6079C191.002 49.662 192.509 51.9048 194.115 54.2677C195.766 56.6128 196.54 59.4901 197.896 62.2698C199.074 65.1203 200.421 68.0095 201.537 71.0967C202.284 74.3024 203.059 77.5769 203.852 80.8974C205.752 87.4145 205.994 94.5861 206.495 101.496C207.754 129.351 201.165 155.955 198.932 156.465C195.811 157.22 197.496 131.837 192.769 105.828C191.373 99.4039 190.414 92.6477 187.897 86.6661C186.845 83.6072 185.802 80.5712 184.786 77.6041C183.331 74.8368 181.903 72.1384 180.52 69.5546C179.048 67.0063 178.105 64.3551 176.347 62.2643C174.679 60.1381 173.145 58.0913 171.694 56.2509C170.197 54.4283 169.113 52.6017 167.699 51.2504C166.276 49.8762 164.988 48.7137 163.971 47.7099C162.953 46.7061 161.692 45.48 160.232 44.014C159.485 43.3013 158.755 42.5021 157.872 41.71C156.864 40.994 155.794 40.2498 154.696 39.4367C152.464 37.8513 150.061 36.0947 147.461 34.2305C144.815 32.3841 141.282 30.9144 138.018 29.0738C124.431 22.0789 105.04 16.1286 84.1235 12.4784C63.162 8.84582 41.6318 6.79042 25.7309 5.21776C9.8033 3.70869 -0.387809 2.56047 0.255249 1.69657Z"/>
+                            </svg>
+                        </div>
+                        <div class="team-card__svg-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217 98" fill="currentColor">
+                                <path d="M203.517 22.6552C120.489 128.266 3.54803 91.1587 2.29153 90.7596C0.667608 90.2287 -0.200435 88.4866 0.330195 86.8628C0.860825 85.2391 2.60286 84.3715 4.22678 84.9025C5.48328 85.3016 130.102 124.677 210.694 2.04102C211.597 0.592506 213.532 0.229286 214.961 1.15706C216.391 2.08483 216.774 3.99488 215.846 5.42433C211.856 11.5493 207.731 17.2946 203.517 22.6552Z"/>
+                            </svg>
+                        </div>
+                        <div class="team-card__image kidearn-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'>
+                            <img src="assets/images/backgrounds/team-1-1.jpg" alt="Ms. Marina">
+                        </div>
+                        <div class="team-card__content">
+                            <h3 class="team-card__title">
+                                <a href="team-details.html">Ms. Marina</a>
+                            </h3>
+                            <p class="team-card__designation">Lead infant teacher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='200ms' style='--accent-color: #75C137;'>
+                        <div class="team-card__svg-top">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207 157" fill="currentColor">
+                                <path d="M0.255249 1.69657C0.907365 0.855618 12.3312 0.403216 29.5368 0.426383C46.7158 0.513133 69.6055 1.28915 92.43 3.86789C115.129 6.52265 136.887 11.9096 152.332 18.8871C156.063 20.7291 160.018 22.2178 163.085 24.0834C166.027 26.0249 168.807 27.8183 171.326 29.4759C172.586 30.3047 173.783 31.1053 174.907 31.8548C175.906 32.6803 176.753 33.513 177.573 34.2768C179.212 35.8045 180.617 37.1329 181.716 38.2108C182.815 39.2886 184.157 40.5888 185.634 42.1007C187.067 43.6303 188.151 45.5893 189.621 47.6079C191.002 49.662 192.509 51.9048 194.115 54.2677C195.766 56.6128 196.54 59.4901 197.896 62.2698C199.074 65.1203 200.421 68.0095 201.537 71.0967C202.284 74.3024 203.059 77.5769 203.852 80.8974C205.752 87.4145 205.994 94.5861 206.495 101.496C207.754 129.351 201.165 155.955 198.932 156.465C195.811 157.22 197.496 131.837 192.769 105.828C191.373 99.4039 190.414 92.6477 187.897 86.6661C186.845 83.6072 185.802 80.5712 184.786 77.6041C183.331 74.8368 181.903 72.1384 180.52 69.5546C179.048 67.0063 178.105 64.3551 176.347 62.2643C174.679 60.1381 173.145 58.0913 171.694 56.2509C170.197 54.4283 169.113 52.6017 167.699 51.2504C166.276 49.8762 164.988 48.7137 163.971 47.7099C162.953 46.7061 161.692 45.48 160.232 44.014C159.485 43.3013 158.755 42.5021 157.872 41.71C156.864 40.994 155.794 40.2498 154.696 39.4367C152.464 37.8513 150.061 36.0947 147.461 34.2305C144.815 32.3841 141.282 30.9144 138.018 29.0738C124.431 22.0789 105.04 16.1286 84.1235 12.4784C63.162 8.84582 41.6318 6.79042 25.7309 5.21776C9.8033 3.70869 -0.387809 2.56047 0.255249 1.69657Z"/>
+                            </svg>
+                        </div>
+                        <div class="team-card__svg-middle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217 98" fill="currentColor">
+                                <path d="M203.517 22.6552C120.489 128.266 3.54803 91.1587 2.29153 90.7596C0.667608 90.2287 -0.200435 88.4866 0.330195 86.8628C0.860825 85.2391 2.60286 84.3715 4.22678 84.9025C5.48328 85.3016 130.102 124.677 210.694 2.04102C211.597 0.592506 213.532 0.229286 214.961 1.15706C216.391 2.08483 216.774 3.99488 215.846 5.42433C211.856 11.5493 207.731 17.2946 203.517 22.6552Z"/>
+                            </svg>
+                        </div>
+                        <div class="team-card__image kidearn-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 5, "speed": 700, "scale": 1 }'>
+                            <img src="assets/images/backgrounds/team-1-1.jpg" alt="Miss Rufina">
+                        </div>
+                        <div class="team-card__content">
+                            <h3 class="team-card__title">
+                                <a href="team-details.html">Miss Rufina</a>
+                            </h3>
+                            <p class="team-card__designation">Assistant infant teacher</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
         
 
+    <script src="assets/vendors/jquery/jquery-3.7.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
+    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
+    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
+    <script src="assets/vendors/tiny-slider/tiny-slider.js"></script>
+    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
+    <script src="assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="assets/vendors/wow/wow.js"></script>
+    <script src="assets/vendors/tilt/tilt.jquery.js"></script>
+    <script src="assets/vendors/simpleParallax/simpleParallax.min.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.js"></script>
+    <script src="assets/vendors/countdown/countdown.min.js"></script>
+    <script src="assets/vendors/jquery-circleType/jquery.circleType.js"></script>
+    <script src="assets/vendors/jquery-lettering/jquery.lettering.min.js"></script>
+    <!-- custom JS -->
+    <script src="assets/js/main.js"></script>
 
-    <!-- Jquery JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- Bootstrap JS -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-    <!-- Woow JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <!-- owl carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
 </body>
 </html>
