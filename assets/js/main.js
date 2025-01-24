@@ -53,3 +53,36 @@ function kidearnPara() {
 $(document).ready(function() {
     thmOwlInit();
 });
+
+
+if ($(".masonry-layout").length) {
+    $(".masonry-layout").imagesLoaded(function () {
+      $(".masonry-layout").isotope({
+        layoutMode: "masonry"
+      });
+    });
+  }
+
+  if ($(".img-popup").length) {
+    var groups = {};
+    $(".img-popup").each(function () {
+      var id = parseInt($(this).attr("data-group"), 10);
+
+      if (!groups[id]) {
+        groups[id] = [];
+      }
+
+      groups[id].push(this);
+    });
+
+    $.each(groups, function () {
+      $(this).magnificPopup({
+        type: "image",
+        closeOnContentClick: true,
+        closeBtnInside: false,
+        gallery: {
+          enabled: true
+        }
+      });
+    });
+  }
