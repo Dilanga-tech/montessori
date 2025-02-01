@@ -18,15 +18,15 @@ function sliderInit() {
 }
 
 
-function kidearnPara() {
-    let kidearnParaElm = $(".bcm-splax");
-    if (kidearnParaElm.length) {
-      kidearnParaElm.each(function () {
+function bcmPara() {
+    let bcmParaElm = $(".bcm-splax");
+    if (bcmParaElm.length) {
+      bcmParaElm.each(function () {
         let self = $(this);
         let className = self.attr("class");
         var image = document.getElementsByClassName(className);
         let options = self.data("para-options");
-        let kidearnPara = new simpleParallax(
+        let bcmPara = new simpleParallax(
           image,
           "object" === typeof options ? options : JSON.parse(options)
         );
@@ -37,9 +37,9 @@ function kidearnPara() {
 
   function thmOwlInit() {
     console.log('Owl Init Function Called');
-    let kidearnowlCarousel = $(".kidearn-owl__carousel");
-    if (kidearnowlCarousel.length) {
-        kidearnowlCarousel.each(function () {
+    let bcmowlCarousel = $(".bcm-owl__carousel");
+    if (bcmowlCarousel.length) {
+        bcmowlCarousel.each(function () {
             let elm = $(this);
             let options = elm.data("owl-options");
             console.log(options);  // Check options
