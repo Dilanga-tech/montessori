@@ -658,6 +658,10 @@ label{
   border-radius: 10px;
 }
 
+.accordion-button:not(.collapsed){
+  background-color: #edf6fb;
+}
+
 
 /*--------------------------------------------------------------
 # About
