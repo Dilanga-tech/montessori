@@ -1283,6 +1283,106 @@ padding-bottom: 80px;
 
 
   /*--------------------------------------------------------------
+# Programs Page
+--------------------------------------------------------------*/
+.programs-details {
+  padding: 80px 0;
+}
+@media (min-width: 992px) {
+  .programs-details {
+    padding: 120px 0;
+  }
+}
+.programs-details__image img {
+  max-width: 100%;
+  border-radius: 14px;
+  height: 500px;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.programs-details__title {
+  margin: 0;
+  font-size: 25px;
+  color: var(--fifth-color, #0B2038);
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .programs-details__title {
+    font-size: 30px;
+  }
+}
+.programs-details__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+}
+.programs-details__text + .programs-details__text {
+  margin-top: 25px;
+}
+.programs-details__info {
+  padding: 40px;
+  box-shadow: 0px 0px 60px 0px rgba(2, 2, 2, 0.07);
+}
+.programs-details__info__title {
+  margin: 0;
+  color: var(--fifth-color, #0B2038);
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--main-color, #F25334);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+@media (min-width: 768px) {
+  .programs-details__info__title {
+    font-size: 24px;
+  }
+}
+.programs-details__info__text {
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
+  border-bottom: 1px solid var(--bcm-border-color, #FCE9DD);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.programs-details__info__list {
+  margin-bottom: 0;
+}
+.programs-details__info__list li + li {
+  padding-top: 30px;
+  margin-top: 30px;
+  border-top: 1px solid var(--bcm-border-color, #FCE9DD);
+}
+.programs-details__info__list__name {
+  font-size: 16px;
+  color: var(--fifth-color, #0B2038);
+  line-height: 1;
+}
+.programs-details__info__list__text {
+  margin: 0;
+  font-size: 16px;
+  color: var(--main-color, #F25334);
+  line-height: 1;
+  margin-top: 18px;
+}
+.programs-details__info__list__text a {
+  color: inherit;
+  background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95%/0px 1px no-repeat;
+  transition: all 500ms ease;
+}
+.programs-details__info__list__text a:hover {
+  background-size: 100% 1px;
+}
+.programs-details__info__list__text a:hover {
+  color: var(--fifth-color, #0B2038);
+}
+
+
+  /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonial-one {
