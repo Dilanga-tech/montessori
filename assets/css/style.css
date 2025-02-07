@@ -325,6 +325,11 @@ label{
   align-items: center;
 }
 
+@media (max-width: 991px) {
+  .mobile-transfer{
+    flex-direction: column-reverse;
+  }
+}
 
 /*--------------------------------------------------------------
 # Hero Slider
@@ -1873,6 +1878,84 @@ padding-bottom: 80px;
     position: relative;
   }
 
+
+
+/*--------------------------------------------------------------
+# Team details
+--------------------------------------------------------------*/
+
+
+  .team-details {
+    padding-top: 120px;
+  }
+  @media (max-width: 767px) {
+    .team-details {
+      padding: 80px 0 0;
+    }
+  }
+  .team-details__inner {
+    border-top: 1px solid var(--bcm-border-color, #FCE9DD);
+    padding-bottom: 40px;
+    padding-top: 20px;
+    position: relative;
+  }
+  .team-details__image {
+    display: inline-block;
+    position: relative;
+  }
+  @media (min-width: 992px) {
+    .team-details__image {
+      margin-right: -30px;
+    }
+  }
+  .team-details__image img {
+    border-radius: 80px;
+    max-width: 100%;
+  }
+  @media (min-width: 992px) {
+    .team-details__content {
+      padding-left: 50px;
+    }
+  }
+  .team-details__content .sec-title {
+    padding-bottom: 22px;
+  }
+  .team-details .sec-title__tagline {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) {
+    .team-details .sec-title__tagline {
+      font-size: 24px;
+    }
+  }
+  .team-details .sec-title__title {
+    font-size: 25px;
+  }
+  @media (min-width: 768px) {
+    .team-details .sec-title__title {
+      font-size: 30px;
+    }
+  }
+  .team-details__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+    font-size: var(--normal-font-size);
+    color: var(--text-white);
+  }
+  .team-details__highlight {
+    margin: 0;
+    background-color: var(--theme-gray, #FAF5F2);
+    border-left: 3px solid var(--main-color, #F25334);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--fifith-black, #0B2038);
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: 10px 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
 
 /*--------------------------------------------------------------
