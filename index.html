@@ -621,11 +621,11 @@
                                 </div>
                                 <div class="form-one__control">
                                     <label for="">Date of Birth</label>
-                                    <input type="date" name="birth" placeholder="" required>
+                                    <input type="date" name="birth" placeholder="" >
                                 </div>
                                 <div class="form-one__control">
                                     <label for="">Preferred start date</label>
-                                    <input type="date" name="start" placeholder="" required>
+                                    <input type="date" name="start" placeholder="" >
                                 </div>
                                 <div class="form-one__control ">
                                     <label for="">Phone Number</label>
@@ -642,6 +642,29 @@
                         </form>
                     </div>
                 </div>
+
+                <script>
+                    const form = document.getElementById("formoid");
+
+                        form.addEventListener("submit", function(event) {
+                            event.preventDefault(); // Prevent default form submission
+                            
+                            const formData = new FormData(form);
+                            
+                            fetch("send_email.php", {
+                                method: "POST",
+                                body: formData,
+                            })
+                            .then(response => response.text())
+                            .then(result => {
+                                alert("Message sent successfully!");
+                            })
+                            .catch(error => {
+                                console.error("Error:", error);
+                            });
+                        });
+
+                </script>
 
                 <div class="col-xl-6 wow fadeInRight" data-wow-delay="300ms">
                     <div class="contact-four__image">
@@ -696,7 +719,7 @@
                         <div class="footer-widget footer-widget--links">
                             <h2 class="footer-widget__title">Links</h2>
                             <ul class="list-unstyled footer-widget__links">
-                                <li><a href="about-us.html">About</a></li>
+                                <li><a href="about-us.html">About us</a></li>
                                 <li><a href="programs.html">Programs</a></li>
                                 <li><a href="our-approach.html">Our Approach</a></li>
                                 <li><a href="team-details.html">Staff</a></li>
