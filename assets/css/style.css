@@ -2435,7 +2435,7 @@ padding-bottom: 80px;
   }
 }
 .main-footer__shape-1 {
-  top: 0;
+  top: 50px;
   right: 0;
   opacity: 0.2;
   animation: arrowMove 4s linear 0s infinite;
@@ -2876,6 +2876,12 @@ padding-bottom: 80px;
 
 
 .bg-overlay-custom{
-  background: linear-gradient(to left, #d9d9d9 0%, #d9d9d9 35%, rgba(242, 242, 243, .5) 47%, transparent 53%, transparent 100%);
-  background-color: #f7f7f7;
+  background: linear-gradient(to left, #F9F5F0  0%, #F9F5F0  35%, rgb(249 245 240 / 38%) 47%, transparent 53%, transparent 100%);
+  background-color: #ffffff;
+}
+
+
+.bg-overlay-custom-2{
+  background: linear-gradient(to right, #F9F5F0  0%, #F9F5F0  35%, rgb(249 245 240 / 38%) 47%, transparent 53%, transparent 100%);
+  background-color: #ffffff;
 }
