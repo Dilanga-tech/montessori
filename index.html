@@ -608,7 +608,7 @@
                             <span class="sub-heading">Contact with Us</span>
                             <h2 class="secondary-header">Feel free to write us <br> anytime</h2>
                         </div>
-                        <form id="formoid" class="contact-one__form contact-form-validated form-one" action="send_email.php" method="post">
+                        <form id="formoid" class="contact-one__form contact-form-validated form-one" action="send_email.php" method="POST">
                          
                             <div class="form-one__group">
                                 <div class="form-one__control ">
@@ -642,29 +642,6 @@
                         </form>
                     </div>
                 </div>
-
-                <script>
-                    const form = document.getElementById("formoid");
-
-                        form.addEventListener("submit", function(event) {
-                            event.preventDefault(); // Prevent default form submission
-                            
-                            const formData = new FormData(form);
-                            
-                            fetch("send_email.php", {
-                                method: "POST",
-                                body: formData,
-                            })
-                            .then(response => response.text())
-                            .then(result => {
-                                alert("Message sent successfully!");
-                            })
-                            .catch(error => {
-                                console.error("Error:", error);
-                            });
-                        });
-
-                </script>
 
                 <div class="col-xl-6 wow fadeInRight" data-wow-delay="300ms">
                     <div class="contact-four__image">
