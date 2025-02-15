@@ -65,7 +65,7 @@
                     </li>
                    
                     <li class="nav-item px-3 px-lg-0 py-1 py-lg-4 pl-20">
-                        <a class="main-btn main-btn-2" href="contact.html" style="color: #fff !important;"><i class="fa-solid fa-envelope"></i> Contact</a>
+                        <a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
                     </li>
                 </ul>
             </div>
@@ -608,31 +608,32 @@
                             <span class="sub-heading">Contact with Us</span>
                             <h2 class="secondary-header">Feel free to write us <br> anytime</h2>
                         </div>
-                        <form class="contact-one__form contact-form-validated form-one" action="inc/sendemail.php">
+                        <form id="formoid" class="contact-one__form contact-form-validated form-one" action="https://api.web3forms.com/submit" method="post">
+                            <input type="hidden" name="access_key" value="07b37253-3a99-443f-a17d-17872b53e1b1">
                             <div class="form-one__group">
                                 <div class="form-one__control ">
                                     <label for="">Name</label>
-                                    <input type="text" name="name" placeholder="">
+                                    <input type="text" name="name" placeholder="" required>
                                 </div>
                                 <div class="form-one__control ">
                                     <label for="">Email Address</label>
-                                    <input type="email" name="email" placeholder="">
+                                    <input type="email" name="email" placeholder="" required>
                                 </div>
                                 <div class="form-one__control">
                                     <label for="">Date of Birth</label>
-                                    <input type="date" name="subject" placeholder="">
+                                    <input type="date" name="birth" placeholder="" required>
                                 </div>
                                 <div class="form-one__control">
                                     <label for="">Preferred start date</label>
-                                    <input type="date" name="subject" placeholder="">
+                                    <input type="date" name="start" placeholder="" required>
                                 </div>
                                 <div class="form-one__control ">
                                     <label for="">Phone Number</label>
-                                    <input type="text" name="phone" placeholder="">
+                                    <input type="text"  name="phone" placeholder="" required>
                                 </div>
                                 <div class="form-one__control form-one__control--full">
                                     <label for="">Message</label>
-                                    <textarea name="message" placeholder="Write a Message"></textarea>
+                                    <textarea id="message" name="message" placeholder="Write a Message"></textarea>
                                 </div>
                                 <div class="form-one__control form-one__control--full mt-3">
                                     <button type="submit" class="main-btn"><span><i class="fa-solid fa-envelope"></i> Get In Touch</span></button>
@@ -641,7 +642,6 @@
                         </form>
                     </div>
                 </div>
-             
 
                 <div class="col-xl-6 wow fadeInRight" data-wow-delay="300ms">
                     <div class="contact-four__image">
