@@ -25,7 +25,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
      <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-  
+    <script src="mailjs.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "A8-yddX5guCxjA9gJ",
+    });
+    })();
+    </script>
 
 </head>
 <body>
@@ -95,38 +105,38 @@
                             <span class="sub-heading">Contact with Us</span>
                             <h2 class="secondary-header">Feel free to write us <br> anytime</h2>
                         </div>
-                        <form id="formoid" class="contact-one__form contact-form-validated form-one" action="send_email.php" method="POST">
+                        <div class="contact-one__form contact-form-validated form-one">
                          
                             <div class="form-one__group">
                                 <div class="form-one__control ">
                                     <label for="">Name</label>
-                                    <input type="text" name="name" placeholder="" required>
+                                    <input type="text" id="name" name="name" placeholder="" required>
                                 </div>
                                 <div class="form-one__control ">
                                     <label for="">Email Address</label>
-                                    <input type="email" name="email" placeholder="" required>
+                                    <input type="email" id="email" name="email" placeholder="" required>
                                 </div>
                                 <div class="form-one__control">
                                     <label for="">Date of Birth</label>
-                                    <input type="date" name="birth" placeholder="" >
+                                    <input type="date" id="birth" name="birth" placeholder="" >
                                 </div>
                                 <div class="form-one__control">
                                     <label for="">Preferred start date</label>
-                                    <input type="date" name="start" placeholder="" >
+                                    <input type="date" id="start" name="start" placeholder="" >
                                 </div>
                                 <div class="form-one__control ">
                                     <label for="">Phone Number</label>
-                                    <input type="text"  name="phone" placeholder="" required>
+                                    <input type="text" id="phone"  name="phone" placeholder="" required>
                                 </div>
                                 <div class="form-one__control form-one__control--full">
                                     <label for="">Message</label>
                                     <textarea id="message" name="message" placeholder="Write a Message"></textarea>
                                 </div>
                                 <div class="form-one__control form-one__control--full mt-3">
-                                    <button type="submit" class="main-btn"><span><i class="fa-solid fa-envelope"></i> Get In Touch</span></button>
+                                    <button type="submit" class="main-btn" onclick="sendMail()"><span><i class="fa-solid fa-envelope"></i> Get In Touch</span></button>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
               
