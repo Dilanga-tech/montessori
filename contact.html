@@ -98,7 +98,7 @@
                         </div>
                         <div class="contact-one__form contact-form-validated form-one">
                          
-                            <div class="form-one__group">
+                            <form class="form-one__group" onsubmit="return sendMail()">
                                 <div class="form-one__control ">
                                     <label for="">Name</label>
                                     <input type="text" id="name" name="name" placeholder="" required>
@@ -124,9 +124,9 @@
                                     <textarea id="message" name="message" placeholder="Write a Message"></textarea>
                                 </div>
                                 <div class="form-one__control form-one__control--full mt-3">
-                                    <button type="submit" class="main-btn" onclick="sendMail(event)"><span><i class="fa-solid fa-envelope"></i> Get In Touch</span></button>
+                                    <button type="submit" class="main-btn"><span><i class="fa-solid fa-envelope"></i> Get In Touch</span></button>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
