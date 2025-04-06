@@ -13,7 +13,7 @@
       `Name: ${name}\nEmail: ${email}\nDate of Birth: ${birth}\nStart Date: ${start}\nPhone: ${phone}\nMessage:\n${message}`
     );
 
-    const mailtoLink = `mailto:thennakoondilanga@gmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:bassett.creek.montessori1@gmail.com?subject=${subject}&body=${body}`;
 
     window.location.href = mailtoLink;
     return false; // prevent form submission
